@@ -1,0 +1,48 @@
+@import url("../../global.css");
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+  }
+  
+  .login-button {
+    width: 288px;
+    height: 47px;
+    background-color: #4CC986; 
+    border-radius: 6px; 
+    flex-shrink: 0;
+  }
+  
+  .login-button:hover {
+    opacity: 0.4;
+    
+  }
+  
+  .wishlist-button {
+    width: 228px;
+    height: 47px;
+    background-color: #4CC986; 
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  /* Light theme */
+.light .button {
+  background-color: var(--primary-light-green);
+  color: var(--neutral-white);
+}
+
+/* Dark theme */
+.dark .button {
+  background-color: var(--secondary-cool-iris);
+  color: var(--primary-light-green);
+}
+  
+  
+
