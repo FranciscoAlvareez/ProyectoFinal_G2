@@ -1,0 +1,61 @@
+/* Estilos generales para los inputs */
+.input {
+  display: flex;
+  align-items: center;
+  width: 362px;
+  height: 47px;
+  border-radius: 4px;
+  background: #FFF;
+  color: #3D3D3D;
+  font-family: Exo, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+/* Estilos específicos para el contenedor de PasswordInput */
+.password-input-container {
+  display: flex;
+  align-items: center;
+  width: 362px;
+  height: 47px;
+  border-radius: 4px;
+  background: #FFF;
+  position: relative;
+}
+
+.password-input {
+  flex-grow: 1;
+  height: 100%;
+  border: none;
+  padding: 0 10px;
+  color: #3D3D3D;
+  font-family: Exo, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 4px;
+}
+
+.password-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #3D3D3D;
+}
+
+.password-input:focus {
+  outline: none;
+}
