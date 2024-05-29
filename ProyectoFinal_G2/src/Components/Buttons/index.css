@@ -33,13 +33,13 @@
   }
 
   /* Light theme */
-.light .button {
-  background-color: var(--primary-light-green);
+.primary .button {
+  background-color: var(--primary-super-green);
   color: var(--neutral-white);
 }
 
 /* Dark theme */
-.dark .button {
+.Secondary .button {
   background-color: var(--secondary-cool-iris);
   color: var(--primary-light-green);
 }

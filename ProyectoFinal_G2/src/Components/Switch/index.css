@@ -36,4 +36,9 @@
   .slider.on:before {
     left: 26px;
   }
+
+  .Secondary .slider.on {
+    background-color: #5F81FB;
+  }
+  
   
