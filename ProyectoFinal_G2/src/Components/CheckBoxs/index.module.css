@@ -1,0 +1,48 @@
+@import url(../../global.css);
+.container{
+    background-color: var(--neutral-gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 7rem;
+}
+.whiteMode{
+    border: 2vw;
+    color: var(--neutral-gray);
+}
+.individualContainer{
+    display: inline-flex;
+    color: var(--neutral-white);
+    margin: 0.2rem;
+}
+.individualContainer p{
+    font-size: 1.4vw;
+    margin: 0.2rem;
+    text-align: center;
+}
+.checkbox {
+    width: 0.6rem;
+    height: 0.5rem;
+    accent-color: var(--primary-super-green);
+    appearance: none;
+    border: 0.2vw solid var(--neutral-white);
+    border-radius: 0.3vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox:checked {
+    background-color: var(--primary-super-green);
+}
+
+.checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 0.18rem;/* Ajusta la posición izquierda del tick * * Ajusta la posición superior del tick */
+    width: 0.1rem; /* Ajusta el ancho del tick */
+    height: 0.24rem; /* Ajusta la altura del tick */
+    border: solid white;
+    border-width: 0 0.07rem 0.07rem 0; /* Ajusta el grosor del tick */
+    transform: rotate(45deg);
+}

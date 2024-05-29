@@ -13,3 +13,6 @@
     --neutral-white: #FFFFFF;
     --font-family: "Exo", sans-serif;
 }
+#root{
+    display: flex;
+}
