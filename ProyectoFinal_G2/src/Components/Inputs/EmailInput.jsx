@@ -6,6 +6,7 @@ const EmailInput = () => {
     <input
       type="email"
       placeholder="Email"
+      className='input'
     />
   );
 };
