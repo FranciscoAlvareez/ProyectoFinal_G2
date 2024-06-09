@@ -17,14 +17,14 @@
   height: 702px;
   border-radius: 1rem;
   flex-shrink: 0; 
-  background-color: #00000070;
+  background-color: #16161670;
   background-blend-mode: lighten;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  
+  gap: 1rem;
  
 }
 .children-conteiner-login {
@@ -32,6 +32,7 @@
   flex-direction: column;
   justify-content:center;
   align-items: center;
+  gap: 1rem;
 }
 
 .or-container {
@@ -44,14 +45,14 @@
 .line {
   width: 147.441px;
   height: 2.074px;
-  background-color: #ccc;
+  background-color: #FFF;
   flex-shrink: 0;
 }
 
 .or-text {
   margin: 0 10px;
-  color: #3D3D3D;
-  font-family: Exo, sans-serif;
+  color: #FFF;
+  font-family: "Open Sans";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;

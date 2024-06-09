@@ -6,6 +6,7 @@ import { Button } from "../Buttons"
 import facebookIcon from '../../assets/icons/facebookIcon.svg';
 import twitterIcon from '../../assets/icons/facebookIcon.svg';
 import googleIcon from '../../assets/icons/facebookIcon.svg';
+import CheckBox from "../CheckBoxs/checkBox"
 
 
 
@@ -22,10 +23,14 @@ export function Login(){
                     <EmailInput/>
                     <PasswordInput/>
                     <Button text="Login" className="login-button" />
-                    
+                    <div className="or-container">
+                    <CheckBox label="Remember me"/>
                     <div className="forgot-password-link">
-                        <a href="#">Forgot password?</a>
+                        <a href="#" style={{ color: "#5FE19B"}}>Forgot password?</a>
                     </div>
+
+                    </div>
+                    
 
                     <div className="or-container">
                         <div className="line"></div>
