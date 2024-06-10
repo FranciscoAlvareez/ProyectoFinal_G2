@@ -25,8 +25,7 @@ export function Dropdown(){
   };
 
   return (
-    <div className="dropdown">
-      <img src={searchIcon} alt="Search Icon"/>
+    <div className="dropdown">      
       <input
         className="dropdown-toggle"
         type="text"
@@ -35,8 +34,7 @@ export function Dropdown(){
         onKeyDown={handleKeyDown}
         onClick={() => setIsOpen(!isOpen)}
         style={{ cursor: 'pointer' }}
-      />
-      <img src={closeIcon} alt="Close Icon"/>
+      />    
       {isOpen && (
         <ul className="dropdown-menu">
           {history.map((item, index) => (
