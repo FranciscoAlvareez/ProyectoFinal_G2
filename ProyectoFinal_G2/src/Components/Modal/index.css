@@ -1,0 +1,48 @@
+/* src/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 386px;
+    height: 284px;
+    max-width: 80%;
+  }
+  
+  .modal-suscribe {
+    position: absolute;
+    width: 290px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    border: 2px;
+    background-color: #4CC986;
+    color: #FFF
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .modal-cancel {
+    position: absolute;
+    width: 290px;
+    height: 50px;
+    bottom: 10px;
+    right: 180px;
+    background-color: whitesmoke;
+    color: #4CC986;
+    border: 2px;;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
