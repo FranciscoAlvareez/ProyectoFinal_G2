@@ -9,9 +9,9 @@
 }
 
 .sidebar ul {
-  list-style-type: none; /* Elimina los puntos de la lista */
+  list-style-type: none;
   padding: 0;
-  margin: 0; /* Asegura que no haya márgenes en las listas */
+  margin: 0;
 }
 
 .sidebar li {
@@ -19,14 +19,13 @@
   padding: 10px 0;
 }
 
-.sidebar a { /* Estilos para los enlaces */
+.sidebar a {
   text-decoration: none;
 }
 
-/* Estilos para los elementos principales */
 .sidebar .main-item a {
   color: #FFF;
-  font-family: 'Exo', sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -40,18 +39,17 @@
   color: #5FE19B;
 }
 
-/* Estilos para los submenús */
 .sidebar .sub-menu {
-  padding-left: 0; /* Elimina el padding por defecto */
+  padding-left: 0;
 }
 
 .sidebar .sub-menu li {
-  margin: 5px 0; /* Ajusta el margen de los sub-elementos */
+  margin: 5px 0;
 }
 
 .sidebar .sub-menu a {
   color: #FFF;
-  font-family: 'Exo';
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -59,13 +57,13 @@
   position: relative;
   left: 18px;
   right: 24px;
-  display: flex; /* Flexbox para alinear el icono y el texto */
+  display: flex;
   align-items: center;
 }
 
 .sidebar .icon {
   width: 24px;
-  height: 23.999px;
-  flex-shrink: 0; /* Evita que el icono se haga más pequeño */
-  margin-right: 5px; /* Margen derecho para separar el icono del texto */
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 5px;
 }
