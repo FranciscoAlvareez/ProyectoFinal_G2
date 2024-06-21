@@ -1,0 +1,28 @@
+@import url(../../global.css);
+.modalGenres {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: -2rem; 
+  padding: 0.626rem 0.626rem  0.626rem  0;
+  background-color: var(--neutral-white);
+  border-radius: 1rem;
+  z-index: 100;
+  box-shadow: 0 0 10px var(--primary-super-green);
+}
+.genres {
+  display: inline-flex;
+  height: 1.75rem;
+  margin-left: 0.65rem;
+  padding: 0.28125rem 0.625rem;
+  border-radius: 6.25rem;
+  background-color: var(--primary-light-green);
+  color: var(--neutral-white);
+  flex: 1 1 21%;
+}
+.genres p{margin-top: 0.2rem;}
+/*tablet*/
+@media (768px <= width < 1440px) {.modalGenres{display:none;}}
+/*celu*/
+@media (320px <= width < 768px) {.modalGenres{display:none;}}
