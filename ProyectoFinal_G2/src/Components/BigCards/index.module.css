@@ -1,0 +1,91 @@
+@import url(../../global.css);
+.allBigCardsContainer {
+  margin-right: 15.75rem;
+  width: 43.5625rem;
+  float: right;
+}
+.divContainerCardInfo {
+  width: 43.5625rem;
+  height: 32.25rem;
+  margin: 0 0 2.87rem 0;
+  border-radius: 1rem; /* Bordes redondeados */
+  overflow: hidden; /* Esconder cualquier contenido que desborde */
+  transition: transform 0.2s; /* Transición para el efecto hover */
+  box-shadow: 0 0 10px var(--primary-super-green); /* Sombra para las tarjetas */
+}
+.divContainerCardInfo:hover {
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño al hacer hover */
+}
+.div_img {
+  height: 19.25rem;
+  color: var(--neutral-gray);
+}
+.div_img img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 25.97656rem;
+  z-index: 0;
+}
+.footer {
+  position: relative;
+  z-index: 100;
+  width: 101%;
+  height: 12.56rem;
+  background-color: var(--neutral-white);
+}
+.div_titleCard {
+  color: var(--neutral-gray);
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.title_card {
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+  margin: 0.3rem 0 0 0;
+}
+.enumeration {
+  color: var(--primary-super-green);
+  font-size: 2rem;
+  margin: 0.3rem 0 0 0;
+  font-style: normal;
+  line-height: normal;
+}
+.div_texts{
+    width: 100%;
+    display: inline-flex;
+    text-align: center;
+}
+.textLeft{
+    display: inline-flex;
+    margin: 0 0 0 1rem;
+}
+.textCenter{
+  margin-left: 1.5rem;
+  display: inline-flex;
+}
+.icons{
+    position: absolute;
+    right: 1rem;
+    margin: 0.5rem 0 0 0;
+}
+.div_texts p, label {
+  font-size: 1.3rem;
+  margin: 0.5rem 0.5rem 0 0;
+}
+.description{
+  width: 41.5625rem;
+  height: 4.75rem;
+  margin: 0.4rem 0 0 1rem;
+}
+.description p{
+  margin: 0;
+}
+/*tablet*/
+@media (768px <= width < 1440px) {
+  .allBigCardsContainer {
+    margin-right: 2.25rem;
+  }
+}
