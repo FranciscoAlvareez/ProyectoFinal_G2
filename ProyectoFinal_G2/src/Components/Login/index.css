@@ -1,0 +1,64 @@
+.login-screen {
+  background: url('../../assets/BG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  
+  
+  
+}
+.conteiner-login {
+  width: 462px;
+  height: 702px;
+  border-radius: 1rem;
+  flex-shrink: 0; 
+  background-color: #16161670;
+  background-blend-mode: lighten;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+.children-conteiner-login {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.or-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.line {
+  width: 147.441px;
+  height: 2.074px;
+  background-color: #FFF;
+  flex-shrink: 0;
+}
+
+.or-text {
+  margin: 0 10px;
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
