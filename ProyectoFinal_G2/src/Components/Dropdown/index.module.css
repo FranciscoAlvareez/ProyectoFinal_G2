@@ -1,0 +1,24 @@
+/* Estilos para el dropdown personalizado */
+@import url(../../global.css);
+.dropdown {
+  width: 22.625rem;
+  height: 2.9375rem;
+  border-radius: 0.25rem;
+}
+
+.dropdown:focus-visible {
+  outline: none;
+}
+
+.dropdown_toggle {
+  border-radius: 0.25rem;
+  width: 100%;
+  height: 100%;
+  color: var(--neutral-grayLight);
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown_toggle:focus-visible {
+  outline: none;
+}
