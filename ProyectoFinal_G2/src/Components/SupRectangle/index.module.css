@@ -1,0 +1,29 @@
+/* BackgroundSection.css */
+.background_section {
+  width: 100%;
+  height: 5.875rem;
+  background-image: url('../../assets/icons/rectangleIcon.svg');
+}
+.elements{
+  width: 100%;
+  margin: 1.44rem 0 0 0;
+  display:inline-flex;
+  justify-content: space-between;
+}
+.gamefinder_image {
+  margin-left: 1.69rem;
+  width: 18.3125rem;
+  height: 3.75rem;
+}
+
+.user_image {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.44rem;
+}
+
+
+  

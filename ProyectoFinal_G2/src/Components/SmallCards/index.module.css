@@ -1,0 +1,199 @@
+@import url(../../global.css);
+.globalCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 14rem; /* Espacio entre las tarjetas */
+  width: 82.6304%;
+  margin-left: 16.44rem;
+}
+
+.divContainerCardInfo {
+  background: #fff; /* Fondo blanco para la tarjeta */
+  border-radius: 1rem; /* Bordes redondeados */
+  width: 22.6875rem;
+  box-shadow: 0 0 10px var(--primary-super-green); /* Sombra para las tarjetas */
+  transition: transform 0.2s; /* Transición para el efecto hover */
+  margin: 0 0 3rem 0;
+}
+
+.divContainerCardInfo:hover {
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño al hacer hover */
+}
+
+.div_img {
+  display: flex;
+  border-radius: 1rem;
+  width: 100%;
+  height: 12rem;
+}
+.div_img img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.footer {
+  width: 20.6875rem;
+  margin-left: 1rem;
+}
+.div_titleCard {
+  color: var(--neutral-gray);
+  margin: 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.title_card {
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: normal;
+}
+.enumeration {
+  color: var(--primary-super-green);
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: normal;
+}
+.div_texts {
+  display: flex;
+  justify-content: space-between;
+}
+.div_texts p,
+label {
+  margin: 0 0 0.4rem 0;
+}
+.textLeft {
+  display: flex;
+  flex-direction: column;
+}
+.textCenter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.firstLabel, .secondLabel{
+  font-size: 1rem;
+  margin: 0 0 0.4rem 0;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.icons img {
+  padding: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*tablet*/
+@media (768px <= width < 1440px) {
+  .globalCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    width: 94%;
+    margin: 0 0 0 1.5rem;
+    gap: 1.5rem;
+  }
+  .divContainerCardInfo {
+    width: 21.9375rem;
+    height: 19.625rem;
+    margin: 0;
+  }
+  .div_img {
+    height: 11.19156rem;
+  }
+  .footer {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1rem;
+  }
+  .title_card,
+  .enumeration {
+    margin: 1rem 0 0 0;
+  }
+  .title_card {
+    font-size: 1.2rem;
+  }
+  .enumeration {
+    font-size: 1rem;
+  }
+  .div_texts {
+    margin: 0.4rem 0 0 0;
+  }
+  .textLeft p {
+    margin: 0.1rem 0 0.4rem 0;
+    width: 6.1rem;
+  }
+  .textCenter {
+    width: 6rem;
+  }
+  .firstLabel {
+    width: 6rem;
+    margin: 0.1rem 0 0.1rem 0;
+    text-align: center;
+  }
+  .secondLabel {
+    font-size: 1rem;
+    width: 10rem;
+    margin: 0.5rem 0 0 0.3rem;
+    text-align: left;
+  }
+  .icons {
+    margin: 0.1rem 0 0 0;
+    height: 100%;
+  }
+}
+
+/*celu*/
+@media (320px <= width < 768px) {
+  .globalCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 10% 0 10%;
+  }
+  .divContainerCardInfo {
+    height: 20.75rem;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+  .div_img {
+    width: 100%;
+    height: 10.90688rem;
+  }
+  .footer {
+    width: 80%;
+    height: 45%;
+    margin-left: 10%;
+    font-size: 1rem;
+    position: relative;
+  }
+  .title_card,
+  .enumeration {
+    margin: 1rem 0 0 0;
+    font-size: 100%;
+  }
+  .div_texts {
+    width: 100%;
+    height: 100%;
+  }
+  .textLeft,
+  .textCenter {
+    margin-top: 5%;
+  }
+  .div_texts p,
+  label {
+    margin: 0.4rem 0 0 0;
+    font-size: 80%;
+  }
+  .icons {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .icons img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
