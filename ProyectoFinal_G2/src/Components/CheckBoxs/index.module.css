@@ -46,3 +46,19 @@
     border-width: 0 0.07rem 0.07rem 0; /* Ajusta el grosor del tick */
     transform: rotate(45deg);
 }
+
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1439px) {
+    .checkbox {
+        width: 1rem;
+        height: 1rem;
+
+    }
+    
+  }
+
+  /* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    
+  }

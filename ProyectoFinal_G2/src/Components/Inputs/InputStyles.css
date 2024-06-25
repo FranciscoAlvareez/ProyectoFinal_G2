@@ -59,3 +59,17 @@
 .password-input:focus {
   outline: none;
 }
+
+/* Estilos para dispositivos móviles width: 288px;
+height: 47px;*/
+@media (max-width: 767px) {
+  .input {
+    width: 288px;
+    height: 47px;
+  }
+  .password-input-container {
+    width: 288px;
+    height: 47px; 
+  }
+    
+}

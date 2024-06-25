@@ -12,6 +12,9 @@
   
   
 }
+.texto-blanco{
+  color:#FFF;
+}
 .conteiner-login {
   width: 462px;
   height: 702px;
@@ -39,7 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 5px;
 }
 
 .line {
@@ -62,3 +65,42 @@
 
 
 
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .login-screen {
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+
+  }
+  .conteiner-login {
+    width: 462px;
+    height: 702px;
+    max-width: 600px;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .conteiner-login {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .or-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .or-text {
+    margin: 10px 0;
+  }
+  .children-conteiner-login {
+    gap: 0.2rem;
+  }
+  
+}
