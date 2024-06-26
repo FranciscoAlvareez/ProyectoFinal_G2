@@ -24,13 +24,13 @@ export function Login(){
                     <PasswordInput/>
                     <Button text="Login" className="login-button" />
                     <div className="or-container">
-                    <CheckBox label="Remember me"/>
-                    <div className="forgot-password-link">
-                        <a href="#" style={{ color: "#5FE19B"}}>Forgot password?</a>
-                    </div>
+                        <CheckBox label="Remember me"/>
+                            <div className="forgot-password-link">
+                                <a href="#" style={{ color: "#5FE19B"}}>Forgot password?</a>
+                            </div>
 
                     </div>
-                    
+                     
 
                     <div className="or-container">
                         <div className="line"></div>
