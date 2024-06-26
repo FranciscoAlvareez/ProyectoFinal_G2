@@ -2,7 +2,6 @@
 .globalCardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 14rem; /* Espacio entre las tarjetas */
   width: 82.6304%;
   margin-left: 16.44rem;
 }

@@ -16,6 +16,10 @@ const BigCard = ({ infoCard }) => {
     setLiked(!liked);
   };
 
+  const handleMouseOut = () => {
+    setShowModal(false);
+  };
+
   const supportedPlatforms = ["PlayStation", "Xbox", "PC", "Nintendo"];
 
   const platforms = infoCard.parent_platforms
@@ -27,7 +31,7 @@ const BigCard = ({ infoCard }) => {
   const showEllipsis = infoCard.genres.length > maxGenresToShow;
 
   return( <>
-    <div className={classes.divContainerCardInfo}>
+    <div className={classes.divContainerCardInfo} onClick={handleClick}>
       <div className={classes.div_img}>
         <img src={infoCard.background_image} alt={infoCard.name} />
       </div>

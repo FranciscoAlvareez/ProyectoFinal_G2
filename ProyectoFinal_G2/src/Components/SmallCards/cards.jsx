@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classes from "./index.module.css";
 import ModalGenres from "../ModalGenres";
 
-function IndividualCards({ infoCard }) {
+function IndividualCards({ infoCard/*, onSelect */}) {
   const supportedPlatforms = ["PlayStation", "Xbox", "PC", "Nintendo"];
   const platforms = infoCard.parent_platforms
     .filter(platform => supportedPlatforms.includes(platform.platform.name))
@@ -13,17 +13,32 @@ function IndividualCards({ infoCard }) {
   const showEllipsis = infoCard.genres.length > maxGenresToShow;
 
   const [showModal, setShowModal] = useState(false);
+  const [modalPosition, setModalPosition] = useState({ top: '100%', left: '0' });
 
-  const handleMouseOver = () => {
+  const handleMouseOver = (event) => {
     setShowModal(true);
+
+    const modalContainer = event.currentTarget.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+
+    let left = 0;
+    if (modalContainer.left + 300 > windowWidth) {
+      left = windowWidth - (modalContainer.left + 300);
+    }
+
+    setModalPosition({ top: '100%', left: `${left}px` });
   };
 
   const handleMouseOut = () => {
     setShowModal(false);
   };
 
+  const handleClick = () => {
+    onSelect(infoCard);
+  };
+
   return (
-    <div className={classes.divContainerCardInfo}>
+    <div className={classes.divContainerCardInfo} /*onClick={handleClick}*/>
       <div className={classes.div_img}>
         <img src={infoCard.background_image} alt={infoCard.name} />
       </div>
@@ -45,7 +60,7 @@ function IndividualCards({ infoCard }) {
               onMouseOut={handleMouseOut}
             >
               {genres.map((genre, index) => (
-                <React.Fragment key={genre.id}>
+                <React.Fragment key={index}>
                   {genre.name}
                   {index < genres.length - 1 ? ", " : ""}
                 </React.Fragment>
@@ -55,6 +70,7 @@ function IndividualCards({ infoCard }) {
             {showModal && (
               <div
                 className={classes.modalContainer}
+                style={modalPosition}
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
               >

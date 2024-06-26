@@ -1,0 +1,11 @@
+@import url(../../global.css);
+.globalContainer {
+  width: 67.25rem;
+  height: 49.5625rem;
+  margin: 6.94rem 11.38rem;
+  border-radius: 1.5rem;
+}
+.header{
+    width: 37.6875rem;
+    background-color: black;
+}
