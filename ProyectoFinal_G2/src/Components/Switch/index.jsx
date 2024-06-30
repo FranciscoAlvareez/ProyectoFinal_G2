@@ -2,11 +2,12 @@ import React from "react";
 import { useState } from "react";
 import './index.css'; 
 
-export function Switch()    {
+export function Switch({ onToggle }) {
     const [isOn, setIsOn] = useState(false);
   
     const toggleSwitch = () => {
       setIsOn(!isOn);
+      onToggle();
     };
   
     return (
