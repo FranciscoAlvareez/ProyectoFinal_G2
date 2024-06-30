@@ -1,4 +1,26 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
+}
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app.dark {
+  background-color: #151515;;
+  color: #FFFFFF;
+}
+
+.app.light {
+  background-color: #F0F0F0;
+  color: #515151;
+}
+
+.switch-wrapper {
+  position: absolute;
+  top: 121px;
+  right: 40px;
+}
