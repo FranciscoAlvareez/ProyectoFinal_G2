@@ -1,9 +1,12 @@
 /* Estilos para el dropdown personalizado */
 @import url(../../global.css);
 .dropdown {
+  position:relative;
   width: 22.625rem;
   height: 2.9375rem;
   border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown:focus-visible {
@@ -17,8 +20,29 @@
   color: var(--neutral-grayLight);
   border: none;
   cursor: pointer;
+  background-color: aqua;
 }
 
 .dropdown_toggle:focus-visible {
   outline: none;
+  padding-left: 2rem;
 }
+
+.searchIcon {
+  position: absolute;
+  left: 0;
+  width: 1.5rem;
+  height: 1.49994rem;
+  flex-shrink: 0;
+  
+}
+
+.closeIcon {
+  position: absolute;
+  right: 0;
+  width: 1.5rem;
+  height: 1.49994rem;
+  flex-shrink: 0;
+}
+
+
