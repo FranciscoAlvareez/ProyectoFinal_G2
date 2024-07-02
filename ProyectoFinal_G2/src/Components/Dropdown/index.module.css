@@ -20,7 +20,7 @@
   color: var(--neutral-grayLight);
   border: none;
   cursor: pointer;
-  background-color: aqua;
+  background-color: #FFFFFF;
 }
 
 .dropdown_toggle:focus-visible {
