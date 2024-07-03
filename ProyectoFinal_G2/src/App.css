@@ -29,6 +29,12 @@ html, body {
   top: 121px;
   right: 40px;
 }
+.switch-wrapper-principal p{ margin: 0.5rem 1rem 0 0;}
+.imgSwitchCards{
+  position: absolute;
+  margin-top: 2rem;
+  float: left;
+}
 
 .header {
   width: 100%;

@@ -26,7 +26,15 @@ const PrincipalScreen = () => {
   return (
     <div className={`app ${theme}`}>
       <div className="switch-wrapper-principal">
+        <p>Dark Mode</p>
         <Switch onToggle={toggleTheme} />
+        <img 
+          className="imgSwitchCards"
+          src={showBigCards ? showSmallCardsIcon : showBigCardsIcon} 
+          alt={showBigCards ? 'Show Small Cards' : 'Show Big Cards'}
+          onClick={toggleCardsView}
+          style={{ cursor: 'pointer' }} // Añade estilo para que parezca un botón
+        />
       </div>
       <div className="header">
         <SupRectangle />
@@ -40,12 +48,6 @@ const PrincipalScreen = () => {
         
       </div>
       <div className="content">
-        <img 
-          src={showBigCards ? showSmallCardsIcon : showBigCardsIcon} 
-          alt={showBigCards ? 'Show Small Cards' : 'Show Big Cards'}
-          onClick={toggleCardsView}
-          style={{ cursor: 'pointer' }} // Añade estilo para que parezca un botón
-        />
         {showBigCards ? <AllBigCards theme={theme} /> : <Cards theme={theme} />}
       </div>
     </div>
