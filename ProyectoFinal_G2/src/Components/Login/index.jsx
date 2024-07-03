@@ -11,9 +11,15 @@ import twitterIconLight from '../../assets/icons/twitterIconLight.svg';
 import googleIconLight from '../../assets/icons/googleIconLight.svg';
 import CheckBox from "../CheckBoxs/checkBox";
 import { Switch } from "../Switch";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 
-export function Login({ theme, toggleTheme }){
+export function Login(){
+    const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
 
     const facebookIcon = theme === 'dark' ? facebookIconDark : facebookIconLight;
     const twitterIcon = theme === 'dark' ? twitterIconDark : twitterIconLight;
@@ -24,10 +30,11 @@ export function Login({ theme, toggleTheme }){
         navigate('/principal');
     };
     
+    
     return(
         <div className={`login-screen ${theme}`}>
             <div className="switch-wrapper-login">
-                <Switch onToggle={toggleTheme} />
+            <Switch onToggle={toggleTheme} />
             </div>
             <div className="conteiner-login">
                 <div className="children-conteiner-login">
