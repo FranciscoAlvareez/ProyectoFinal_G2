@@ -4,7 +4,7 @@ import { useFetch } from "../Hooks/genHook";
 import Modal from "../Modal";
 import CompleteInfoCard from "../CompleteInfoCard";
 
-const BigCard = ({ infoCard }) => {
+const BigCard = ({ infoCard, theme }) => {
   const [liked, setLiked] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [selectedGameId, setSelectedGameId] = useState(null);
@@ -41,11 +41,12 @@ const BigCard = ({ infoCard }) => {
 
   return (
     <>
-      <div className={classes.divContainerCardInfo} onClick={() => handleClick(infoCard.id)}>
-        <div className={classes.div_img}>
-          <img src={infoCard.background_image} alt={infoCard.name} />
-        </div>
-        <div className={classes.footer}>
+      <div className={`${classes.divContainerCardInfo} ${classes[theme]}`} onClick={() => handleClick(infoCard.id)}>
+        <div className={`${classes.footer} ${classes[theme]}`}>
+          <div className={classes.div_img}>
+            <img src={infoCard.background_image} alt={infoCard.name} />
+          </div>
+        
           <div className={classes.div_titleCard}>
             <h3 className={classes.title_card}>{infoCard.name}</h3>
             <h4 className={classes.enumeration}>#{infoCard.id}</h4>
