@@ -28,9 +28,9 @@
   z-index: 0;
 }
 .footer {
-  position: relative;
+  position: absolute;
   z-index: 100;
-  width: 101%;
+  width: 100%;
   height: 12.56rem;
   background-color: var(--neutral-white);
 }

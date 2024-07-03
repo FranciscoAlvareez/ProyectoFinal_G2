@@ -16,7 +16,7 @@ export const useFetch = (_url) => {
     setError(null);
     const source = axios.CancelToken.source();
 
-    setTimeout(() => {
+    // setTimeout(() => {
       axios
         .get(_url, { params, cancelToken: source.token })
         .then((res) => {
@@ -27,11 +27,11 @@ export const useFetch = (_url) => {
           setLoading(false);
           setError("An error occurred...");
         });
-    }, 1000);
+    // }, 10000);
 
-    return () => {
-      source.cancel();
-    };
+    // return () => {
+    //   source.cancel();
+    // };
   }, [_url]);
 
   return { data, error, loading };
