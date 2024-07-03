@@ -13,7 +13,7 @@
 }
 .individualContainer{
     display: inline-flex;
-    color: var(--neutral-white);
+    color: grey;
     margin: 0.2rem;
 }
 .individualContainer p{
