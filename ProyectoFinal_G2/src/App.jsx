@@ -11,8 +11,8 @@ export function App() {
   return (
     <Router>
       <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/principal" element={<PrincipalScreen />} />
+        <Route path="/" element={<Login/>} />
+        <Route path="/principal" element={<PrincipalScreen/>} />
       </Routes>
     </Router>
   );
