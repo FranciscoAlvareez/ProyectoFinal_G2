@@ -7,6 +7,7 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import EmailInput from './Components/Inputs/EmailInput';
 import PasswordInput from './Components/Inputs/PasswordInput';
 import { Switch } from './Components/Switch';
+import { Button } from './Components/Buttons';
 import SupRectangle from './Components/SupRectangle';
 
 
@@ -17,9 +18,16 @@ const App = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
+  const [view, setView] = useState('big');
+
+  const handleViewChange = (newView) => {
+    setView(newView);
+  };
+
   return (
     <div className={`app ${theme}`}>
       <div className="switch-wrapper">
+        <p>Dark mode</p>
         <Switch onToggle={toggleTheme} />
       </div>
       <Sidebar theme={theme}/>
