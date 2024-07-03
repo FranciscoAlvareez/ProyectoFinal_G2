@@ -13,19 +13,9 @@ import SupRectangle from './Components/SupRectangle';
 const App = () => {
   const [theme, setTheme] = useState("light");
 
-<<<<<<< HEAD
-  return(
-    
-     
-     <></>
-    
-  
-    )
-=======
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
->>>>>>> 4b93b3bc8957d94dacaf63c3ff5158c032c4e669
 
   return (
     <div className={`app ${theme}`}>
