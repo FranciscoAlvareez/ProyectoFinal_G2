@@ -10,6 +10,7 @@
   width: 22.6875rem;
   transition: transform 0.2s; /* Transición para el efecto hover */
   margin: 0 0 3rem 0;
+  box-shadow: 0 0 10px var(--primary-super-green);
 }
 
 .divContainerCardInfo:hover {

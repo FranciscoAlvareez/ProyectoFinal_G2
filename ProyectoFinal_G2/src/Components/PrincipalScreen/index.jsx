@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import '../../App.css';
 import Sidebar from '../Sidebar/Sidebar';
-import EmailInput from '../Inputs/EmailInput'; // Asegúrate de importar solo lo que se necesitará en este componente
-import PasswordInput from '../Inputs/PasswordInput'; // Asegúrate de importar solo lo que se necesitará en este componente
 import { Switch } from '../Switch';
 import SupRectangle from '../SupRectangle';
 import Cards from '../SmallCards';
@@ -50,16 +48,6 @@ const PrincipalScreen = () => {
         />
         {showBigCards ? <AllBigCards theme={theme} /> : <Cards theme={theme} />}
       </div>
-      {/* 
-      <form>
-        <div>
-          <EmailInput className="input" />
-        </div>
-        <div>
-          <PasswordInput className="input" />
-        </div>
-      </form>
-      */}
     </div>
   );
 };
