@@ -1,41 +1,15 @@
-import React, { useState } from 'react';
 import './App.css';
-import CompleteInfoCard from "./Components/CompleteInfoCard/index"
-import AllBigCards from "./Components/BigCards/index"
-import Cards from "./Components/SmallCards/index"
-import Sidebar from './Components/Sidebar/Sidebar';
-import EmailInput from './Components/Inputs/EmailInput';
-import PasswordInput from './Components/Inputs/PasswordInput';
-import { Switch } from './Components/Switch';
-import SupRectangle from './Components/SupRectangle';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Login } from './Components/Login';
+import PrincipalScreen from './Components/PrincipalScreen';
 
-
-const App = () => {
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
-
+export function App() {
   return (
-    <div className={`app ${theme}`}>
-      <div className="switch-wrapper">
-        <Switch onToggle={toggleTheme} />
-      </div>
-      <Sidebar theme={theme}/>
-      <SupRectangle />
-      {/* 
-      <form>
-        <div>
-          <EmailInput className="input" />
-        </div>
-        <div>
-          <PasswordInput className="input" />
-        </div>
-      </form>
-      */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<PrincipalScreen />} />
++      </Routes>
+    </Router>
   );
-};
-
-export default App;
+}

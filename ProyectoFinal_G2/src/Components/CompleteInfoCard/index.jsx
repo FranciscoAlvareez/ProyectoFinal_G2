@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./index.module.css";
 import { useFetch } from "../Hooks/genHook";
 import { Button } from "../Buttons";
-import meGustaIcon from '../../assets/icons/likeIcon.svg';
+import meGustaIcon from '../../assets/icons/meGustaIcon.svg';
 import shareIcon from '../../assets/icons/shareIcon.svg';
 import commentsIcon from '../../assets/icons/commentsIcon.svg';
 import heartIcon from '../../assets/icons/heartIcon.svg';
