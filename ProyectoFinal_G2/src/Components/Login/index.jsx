@@ -11,12 +11,18 @@ import twitterIconLight from '../../assets/icons/twitterIconLight.svg';
 import googleIconLight from '../../assets/icons/googleIconLight.svg';
 import CheckBox from "../CheckBoxs/checkBox";
 import { Switch } from "../Switch";
+import { useNavigate } from "react-router-dom"
 
 export function Login({ theme, toggleTheme }){
 
     const facebookIcon = theme === 'dark' ? facebookIconDark : facebookIconLight;
     const twitterIcon = theme === 'dark' ? twitterIconDark : twitterIconLight;
     const googleIcon = theme === 'dark' ? googleIconDark : googleIconLight;
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+        navigate('/principal');
+    };
     
     return(
         <div className={`login-screen ${theme}`}>
@@ -35,7 +41,7 @@ export function Login({ theme, toggleTheme }){
                         <CheckBox label="Remember me" theme={theme} />
                         <a href="#" style={{ color: "#5FE19B"}}>Forgot password?</a>   
                     </div>
-                    <Button text="Login" className="login-button" />
+                    <Button text="Login" className="login-button" onClick={handleLogin} />
                     <div className="not-registered-link">
                         <p>Not registered?<a href="#" style={{ color: "#5FE19B"}}>Register now</a></p>
                     </div>

@@ -19,7 +19,7 @@ html, body {
 }
 
 .app.light {
-  background-color: var(--background-whiteMode);
+  background-color: #F0F0F0;
   color: #515151;
 }
 
