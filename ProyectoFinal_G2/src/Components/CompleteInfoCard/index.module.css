@@ -1,11 +1,155 @@
-@import url(../../global.css);
-.globalContainer {
-  width: 67.25rem;
-  height: 49.5625rem;
-  margin: 6.94rem 11.38rem;
-  border-radius: 1.5rem;
+/* Añadir estilos para el contenedor de la imagen derecha */
+.rightImageContainer {
+  position: absolute;
+  top: 10rem; /* Ajusta según la posición deseada */
+  right: 1rem; /* Ajusta según la posición deseada */
+  display: flex;
+  flex-direction: row;  /* Acomoda los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 400px;
+  flex-wrap: wrap;
 }
-.header{
-    width: 37.6875rem;
-    background-color: black;
+
+.rightImageContainer img {
+  
+  margin-right: 1rem; /* Espacio entre cada imagen */
+  margin-bottom: 1rem; /* Espacio debajo de cada imagen */
 }
+
+.completeContainer {
+  padding: 2rem;
+  position: relative; /* Añade posición relativa para usar en posición absoluta */
+}
+
+.backgroundImage {
+  width: 1076px;
+  height: 645px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.icons img {
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.div_titleCard {
+  color: var(--neutral-gray);
+  width: 603px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 1rem; /* Añade un margen superior para separar del contenedor de íconos */
+}
+
+.title_card {
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.enumeration {
+  color: var(--primary-super-green);
+  font-size: 1.5rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.footer {
+  position: absolute;
+  bottom: 4rem; /* Ajusta la posición vertical */
+  left: 1rem; /* Ajusta la posición horizontal */
+  padding: 1rem;
+  border-radius: 8px;
+  color: white; /* Color del texto */
+}
+
+.div_texts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Alineación de los textos */
+}
+
+.textLeft {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.textLeft p {
+  margin: 0.5rem 0;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2rem; /* Ajusta según la distancia que quieras entre los botones */
+  margin-top: 1rem; /* Añade un margen superior para separar de otros elementos */
+}
+
+.logosConteiner {
+  display: flex;
+  gap: 2rem; /* Ajusta según la distancia que quieras entre los botones */
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .overlay {
+    flex-direction: column; /* Cambia a columna para que los elementos se apilen verticalmente */
+  }
+
+  .icons {
+    flex-direction: column; /* Alinea los íconos verticalmente */
+  }
+
+  .div_titleCard {
+    width: 100%; /* Ajusta el ancho completo */
+  }
+
+  .buttonContainer {
+    flex-direction: column; /* Apila los botones verticalmente */
+    align-items: center; /* Centra los botones horizontalmente */
+  }
+
+  .footer {
+    text-align: center; /* Centra el texto */
+  }
+
+  .rightImageContainer {
+    flex-direction: column; /* Acomoda las imágenes una debajo de la otra */
+    align-items: center; /* Centra las imágenes horizontalmente */
+    top: 0rem; /* Ajusta según la posición deseada */
+  right: 0rem; /* Ajusta según la posición deseada */
+  }
+  
+  .rightImageContainer img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al contenedor */
+    margin-bottom: 0.5rem; /* Espacio entre cada imagen */
+  }
+}
+
