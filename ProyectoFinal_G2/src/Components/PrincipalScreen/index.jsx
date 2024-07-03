@@ -6,13 +6,24 @@ import PasswordInput from '../Inputs/PasswordInput'; // Asegúrate de importar s
 import { Switch } from '../Switch';
 import SupRectangle from '../SupRectangle';
 import Cards from '../SmallCards';
+import AllBigCards from '../BigCards';
+
+import showSmallCardsIcon from '../../assets/icons/showSmallCardsIcon.svg';
+import showBigCardsIcon from '../../assets/icons/showBigCardsIcon.svg';
 
 const PrincipalScreen = () => {
-  const [theme, setTheme] = useState("light");
 
+  const [theme, setTheme] = useState("light");
+  const [showBigCards, setShowBigCards] = useState(false);
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
+  
+
+  const toggleCardsView = () => {
+    setShowBigCards((prevShowBigCards) => !prevShowBigCards);
+  };
+
 
   return (
     <div className={`app ${theme}`}>
@@ -28,9 +39,16 @@ const PrincipalScreen = () => {
       </div>
       <div className="main-content">
         <Sidebar theme={theme} />
-        <div className="content">
-          <Cards theme={theme} />
-        </div>
+        
+      </div>
+      <div className="content">
+        <img 
+          src={showBigCards ? showSmallCardsIcon : showBigCardsIcon} 
+          alt={showBigCards ? 'Show Small Cards' : 'Show Big Cards'}
+          onClick={toggleCardsView}
+          style={{ cursor: 'pointer' }} // Añade estilo para que parezca un botón
+        />
+        {showBigCards ? <AllBigCards theme={theme} /> : <Cards theme={theme} />}
       </div>
       {/* 
       <form>
