@@ -1,8 +1,8 @@
 @import url(../../global.css);
 .allBigCardsContainer {
-  margin-right: 15.75rem;
   width: 43.5625rem;
-  float: right;
+  margin-left: 30rem;
+  border-radius: 1rem; /* Bordes redondeados */
 }
 .divContainerCardInfo {
   width: 43.5625rem;
@@ -87,6 +87,6 @@
 /*tablet*/
 @media (768px <= width < 1440px) {
   .allBigCardsContainer {
-    margin-right: 2.25rem;
+    margin-left: 8rem;
   }
 }

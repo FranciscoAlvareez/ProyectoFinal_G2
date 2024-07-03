@@ -26,7 +26,7 @@ html, body {
 .switch-wrapper-principal {
   position: absolute;
   display: inline-flex;
-  top: 121px;
+  top: 7rem;
   right: 40px;
 }
 .switch-wrapper-principal p{ margin: 0.5rem 1rem 0 0;}

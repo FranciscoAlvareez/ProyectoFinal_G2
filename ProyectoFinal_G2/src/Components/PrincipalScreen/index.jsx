@@ -47,9 +47,7 @@ const PrincipalScreen = () => {
         <Sidebar theme={theme} />
         
       </div>
-      <div className="content">
         {showBigCards ? <AllBigCards theme={theme} /> : <Cards theme={theme} />}
-      </div>
     </div>
   );
 };
