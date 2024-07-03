@@ -3,20 +3,27 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 82.6304%;
-  margin-left: 16.44rem;
 }
 
 .divContainerCardInfo {
-  background: #fff; /* Fondo blanco para la tarjeta */
   border-radius: 1rem; /* Bordes redondeados */
   width: 22.6875rem;
-  box-shadow: 0 0 10px var(--primary-super-green); /* Sombra para las tarjetas */
   transition: transform 0.2s; /* Transición para el efecto hover */
   margin: 0 0 3rem 0;
 }
 
 .divContainerCardInfo:hover {
   transform: scale(1.05); /* Aumentar ligeramente el tamaño al hacer hover */
+}
+
+.divContainerCardInfo.dark {
+  background-color: #303030;
+  color: #FFF;
+}
+
+.divContainerCardInfo.light {
+  background-color: #FFF;
+  color: #515151;
 }
 
 .div_img {
@@ -37,7 +44,6 @@
   margin-left: 1rem;
 }
 .div_titleCard {
-  color: var(--neutral-gray);
   margin: 0 0;
   display: flex;
   justify-content: space-between;

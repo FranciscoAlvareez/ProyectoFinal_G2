@@ -1,8 +1,8 @@
-/* Estilos generales para los inputs */
 .input {
   display: flex;
   align-items: center;
-  width: 362px;
+  width: 100%;
+  max-width: 362px;
   height: 47px;
   border-radius: 4px;
   background: #FFF;
@@ -22,11 +22,19 @@
   border-color: #666;
 }
 
-/* Estilos específicos para el contenedor de PasswordInput */
+.input-valid {
+  border-color: #36B972;
+}
+
+.input-invalid {
+  border-color: #FB5F5F;
+}
+
 .password-input-container {
   display: flex;
   align-items: center;
-  width: 362px;
+  width: 100%;
+  max-width: 362px;
   height: 47px;
   border-radius: 4px;
   background: #FFF;
@@ -58,4 +66,16 @@
 
 .password-input:focus {
   outline: none;
+}
+
+@media (max-width: 767px) {
+  .input {
+    width: 288px;
+    height: 47px;
+  }
+  
+  .password-input-container {
+    width: 288px;
+    height: 47px;
+  }
 }

@@ -1,13 +1,25 @@
 import React from 'react';
 import './SidebarDark.css';
 import './SidebarLight.css';
-import starIcon from '../../assets/icons/starIcon.svg';
-import calendarIcon from '../../assets/icons/calendarIcon.svg';
-import clockIcon from '../../assets/icons/clockIcon.svg';
-import searchIcon from '../../assets/icons/searchIcon.svg';
-import likeIcon from '../../assets/icons/likeIcon.svg';
+import starIconDark from '../../assets/icons/starIconDark.svg';
+import calendarIconDark from '../../assets/icons/calendarIconDark.svg';
+import clockIconDark from '../../assets/icons/clockIconDark.svg';
+import searchIconDark from '../../assets/icons/searchIconDark.svg';
+import likeIconDark from '../../assets/icons/likeIconDark.svg';
+import starIconLight from '../../assets/icons/starIconLight.svg';
+import calendarIconLight from '../../assets/icons/calendarIconLight.svg';
+import clockIconLight from '../../assets/icons/clockIconLight.svg';
+import searchIconLight from '../../assets/icons/searchIconLight.svg';
+import likeIconLight from '../../assets/icons/likeIconLight.svg';
 
 const Sidebar = ({ theme }) => {
+
+  const starIcon = theme === 'light' ? starIconLight : starIconDark;
+  const calendarIcon = theme === 'light' ? calendarIconLight : calendarIconDark;
+  const clockIcon = theme === 'light' ? clockIconLight : clockIconDark;
+  const searchIcon = theme === 'light' ? searchIconLight : searchIconDark;
+  const likeIcon = theme === 'light' ? likeIconLight : likeIconDark;
+  
   return (
     <div className={`sidebar ${theme}`}>
       <ul>

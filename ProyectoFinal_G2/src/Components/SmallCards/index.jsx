@@ -3,7 +3,7 @@ import IndividualCards from "./cards";
 import classes from "./index.module.css";
 import { useFetch } from "../Hooks/genHook";
 
-function Cards() {
+function Cards({ theme }) {
   const { data, error, loading: isLoading } = useFetch("https://api.rawg.io/api/games");
 
   if (isLoading) {
@@ -13,7 +13,7 @@ function Cards() {
   return (
     <div className={classes.globalCardContainer}>
       {data?.results?.map((game) => (
-        <IndividualCards key={game.id} infoCard={game} />
+        <IndividualCards key={game.id} infoCard={game} theme={theme}/>
       ))}
     </div>
   );

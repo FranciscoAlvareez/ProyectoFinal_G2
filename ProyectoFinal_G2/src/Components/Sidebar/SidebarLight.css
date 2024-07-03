@@ -1,69 +1,81 @@
 .sidebar.light {
-    width: 200px;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 202px;
-    padding: 20px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 202px;
+  padding: 20px;
+  background-color: inherit;
+}
+
+.sidebar.light ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar.light li {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.sidebar.light a {
+  text-decoration: none;
+  color: #515151;
+}
+
+.sidebar.light .main-item a {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  left: 20px;
+  right: 27px;
+}
+
+.sidebar.light .main-item a:hover {
+  color: #36B972;
+}
+
+.sidebar.light .sub-menu {
+  padding-left: 0;
+}
+
+.sidebar.light .sub-menu li {
+  margin: 5px 0;
+}
+
+.sidebar.light .sub-menu a {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  left: 18px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  color: #515151;
+}
+
+.sidebar.light .icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar.light {
+    display: none;
   }
-  
-  .sidebar.light ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+}
+
+@media (min-width: 769px) {
+  .sidebar.light {
+    display: block;
   }
-  
-  .sidebar.light li {
-    margin: 0;
-    padding: 10px 0;
-  }
-  
-  .sidebar.light a {
-    text-decoration: none;
-    color: #515151;
-  }
-  
-  .sidebar.light .main-item a {
-    font-family: var(--font-family);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: relative;
-    left: 20px;
-    right: 27px;
-  }
-  
-  .sidebar.light .main-item a:hover {
-    color: #5FE19B;
-  }
-  
-  .sidebar.light .sub-menu {
-    padding-left: 0;
-  }
-  
-  .sidebar.light .sub-menu li {
-    margin: 5px 0;
-  }
-  
-  .sidebar.light .sub-menu a {
-    font-family: var(--font-family);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: relative;
-    left: 18px;
-    right: 24px;
-    display: flex;
-    align-items: center;
-    color: #515151;
-  }
-  
-  .sidebar.light .icon {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    margin-right: 5px;
-  }
-  
+}
