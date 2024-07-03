@@ -1,30 +1,29 @@
-.sidebar {
+.sidebar.dark {
   width: 200px;
   height: 100vh;
   position: fixed;
   left: 0;
-  top: 94px;
-  background-color: black;
+  top: 202px;
   padding: 20px;
 }
 
-.sidebar ul {
+.sidebar.dark ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar li {
+.sidebar.dark li {
   margin: 0;
   padding: 10px 0;
 }
 
-.sidebar a {
+.sidebar.dark a {
   text-decoration: none;
+  color: #FFF;
 }
 
-.sidebar .main-item a {
-  color: #FFF;
+.sidebar.dark .main-item a {
   font-family: var(--font-family);
   font-size: 20px;
   font-style: normal;
@@ -35,20 +34,19 @@
   right: 27px;
 }
 
-.sidebar .main-item a:hover {
+.sidebar.dark .main-item a:hover {
   color: #5FE19B;
 }
 
-.sidebar .sub-menu {
+.sidebar.dark .sub-menu {
   padding-left: 0;
 }
 
-.sidebar .sub-menu li {
+.sidebar.dark .sub-menu li {
   margin: 5px 0;
 }
 
-.sidebar .sub-menu a {
-  color: #FFF;
+.sidebar.dark .sub-menu a {
   font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
@@ -59,9 +57,10 @@
   right: 24px;
   display: flex;
   align-items: center;
+  color: #FFF;
 }
 
-.sidebar .icon {
+.sidebar.dark .icon {
   width: 24px;
   height: 24px;
   flex-shrink: 0;

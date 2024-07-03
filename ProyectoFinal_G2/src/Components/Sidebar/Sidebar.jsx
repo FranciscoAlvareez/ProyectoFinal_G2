@@ -1,14 +1,15 @@
 import React from 'react';
-import './Sidebar.css';
+import './SidebarDark.css';
+import './SidebarLight.css';
 import starIcon from '../../assets/icons/starIcon.svg';
 import calendarIcon from '../../assets/icons/calendarIcon.svg';
 import clockIcon from '../../assets/icons/clockIcon.svg';
 import searchIcon from '../../assets/icons/searchIcon.svg';
 import likeIcon from '../../assets/icons/likeIcon.svg';
 
-const Sidebar = () => {
+const Sidebar = ({ theme }) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${theme}`}>
       <ul>
         <li className="main-item"><a href="home">Home</a></li>
         <li className="main-item"><a href="reviews">Reviews</a></li>
